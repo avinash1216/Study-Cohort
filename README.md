@@ -23,6 +23,27 @@ A Streamlit and Ollama-powered application that matches learners into study coho
 
 ---
 
+## 💡 Why Local Gemma? (vs. Cloud APIs)
+
+Using a local instance of Gemma via Ollama provides significant advantages over online LLM providers:
+
+*   **Complete Data Privacy:** Peer matching processes personal details (names, roles, skills, and career goals). Local inference ensures no user data ever leaves the local machine or venue network.
+*   **Zero Token Fees:** Cloud APIs charge per-token for inputs and outputs. Running Gemma locally is 100% free, allowing unlimited matching runs without any operational costs.
+*   **Offline Capability:** The application runs completely offline, making it highly reliable and immune to internet outages, cloud service downtime, or API rate-limiting/throttling.
+*   **Environment Stability:** Local execution gives developers full control over hyperparameters and model configurations (e.g., locking temperature to `0.2` for JSON compliance) without fear of unexpected upstream model updates.
+
+### 🏆 Hackathon & Workshop Benefits
+
+This setup is ideal for hackathons, bootcamps, and workshop organizers:
+
+*   **Zero Infrastructure Costs:** Organizers can host the builder application locally at the venue without worrying about a massive API bill from hundreds of participants running matches.
+*   **Frictionless Attendee Team Formation:**
+    *   **Heuristic + AI Matching:** Quickly pairs developers with complementary skills (e.g., backend developers with frontend developers).
+    *   **Custom Icebreakers:** Overcomes social anxiety by giving attendees personalized, context-aware starting messages to kickstart conversations.
+    *   **Immediate Project Ideas:** Suggests high-quality project roadmaps based on combined participant skills, helping teams start coding immediately.
+
+---
+
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository

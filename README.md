@@ -18,7 +18,7 @@ A Streamlit and Ollama-powered application that matches learners into study coho
 ## 🛠️ Tech Stack
 
 *   **Frontend / UI:** Streamlit
-*   **AI Engine:** Ollama (`gemma2:2b` / `gemma4:e2b` or similar)
+*   **AI Engine:** Ollama (`gemma4:e2b` or similar)
 *   **Language:** Python 3.8+
 
 ---
@@ -40,9 +40,9 @@ pip install streamlit requests
 ### 3. Set Up Ollama
 1.  Download and install [Ollama](https://ollama.com/).
 2.  Start the Ollama server.
-3.  Pull the required model (defaults to `gemma2:2b` or `gemma4:e2b` in the codebase):
+3.  Pull the required model (defaults to `gemma4:e2b` in the codebase):
     ```bash
-    ollama pull gemma2:2b
+    ollama pull gemma4:e2b
     ```
     *(Note: If you use a different model tag, update the model field in [ai_engine.py](file:///d:/Avinash/Buildathon/ai_engine.py).)*
 
